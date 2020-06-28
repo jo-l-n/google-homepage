@@ -4,27 +4,51 @@
         <title>Google</title>
         <style>
 
-            header {
-               text-align: right;
+            #wrapper {
                font-family:roboto, Helvetica, sans-serif;
-               width: 100%;
-
+               font-size: 13px;
+               list-style: none;
+               text-decoration: none;
+               text-align:center;
+             
+            
                            } 
-                
-
-            ul {
-                padding: 30px;
-                display: flex;
-                justify-content: flex-end;
-                margin-right: 30px;
+                    
+            
+            #header-nav {
+                width: 100%;
+                height:20px;
+                position:absolute;
+                top:0;
+                padding: 4px;
                 align-items: center;
-                text-decoration: none;
                 list-style:none;
+                text-decoration:none;
+            
                 
             }
-            li {
-              padding-right:30px;
-              padding-bottom: 200px;
+             .li-right {
+              padding:4px;
+              margin-right:20px;
+              float:right;
+              display:flex;
+            
+            
+                 }
+
+    
+            .li-left {
+              padding:4px;
+              margin-left:20px;
+              float:left;
+        
+
+            }
+
+            .profile {
+                float:right;
+                padding-right:25px;
+                margin-top:-5px;
             }
 
             .button {
@@ -39,45 +63,97 @@
 
             }          
             
+
+            .body {
+                text-align: center;
+                display:flexbox;
+                color: #5F6368;
+                padding-top:200px;
+            
+                
+            }
+
             .form {
                 position: center;
-                height: 25px;
-                width: 200px;
+                height: 35px;
+                width: 375px;
                 border-radius: 5px;
                 background-image: url(https://github.com/jo-l-n/google-homepage/blob/master/search-icon.png?raw=true);
                 background-size: 15px;
                 background-repeat: no-repeat;
-                background-position: 5px;
+                background-position: 6px;
+                border-radius: 20px;
+                border-color: gainsboro;
+                border-style:solid
             }
-
-            a {
+            /*a {
                 text-decoration: none;
                 color: black;
             }
-            body {
-                text-align: center;
-                display: block;
-                margin: 0 auto;
-                clear: both;
-                padding-bottom: 50px;
-                color: #5F6368;
-                
+            */
+            #footer-wrapper {
+                font-family:roboto, Helvetica, sans-serif;
+               font-size: 13px;
+               list-style: none;
+               text-align:center;
+               color:gray;
+            
+
 
             }
+            #footer-nav {
+                width:100%;
+                height:40px;
+                position:absolute;
+                bottom:0;
+                padding: 4px;
+                margin:0;
+                align-items: center;
+                list-style:none;
+                background-color: #f2f2f2;
+            
+                
+            }
+             .li-footer-right {
+              padding:4px;
+              margin-right:20px;
+              float:right;
+              
+            
+            
+                 }
+
+    
+            .li-footer-left {
+              padding:4px;
+              margin-left:20px;
+              float:left;
+            
+
+            }
+        
         </style>
     </head>
     <body>
-        <header>
-       <ul>
-           <li> <a href="google.com">Google</li></a>
-           <li> <a href="images.google.com">Images</a></li>
-           <li> <img src="https://github.com/jo-l-n/google-homepage/blob/master/box.png?raw=true" alt="Dashboard"></li>
-           <li> <img src="https://github.com/jo-l-n/google-homepage/blob/master/profile.png?raw=true" alt="Profile Picture"></li>
-       </ul>
-        </header>  
+     <div id="wrapper">
+        <ul id="header-nav">
+        <li class="li-left"> <href="about.google.com">About</li>
+        <li class="li-left"> <href="store.google.com">Store</li>
+    </ul>
 
-    
+       <ul id="header-nav">
        
+           <li class="profile"> <img src="https://github.com/jo-l-n/google-homepage/blob/master/profile.png?raw=true" alt="Profile Picture"></li>
+           <li class="li-right"> <img src="https://github.com/jo-l-n/google-homepage/blob/master/box.png?raw=true" alt="Dashboard"></li>
+           <li class="li-right"> <href="images.google.com">Images</li>
+           <li class="li-right"> <href="google.com">Gmail</li>
+
+        </ul>
+
+
+        </div>
+       
+        <div class="body">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
             <br>
             <form>
@@ -85,9 +161,20 @@
                 <br> <br>
                 <input class="button" type="Submit" value="Google Search">	
                 <input class="button" type="Submit" value="I'm Feeling Lucky">	
+            </div>
 
              </form>
+         <footer>
+            <div id="footer-wrapper">
+                <ul id="footer-nav">
+                    <li class="li-footer-left"> <href="google.com">Advertising</li>
+                    <li class="li-footer-left"> <href="images.google.com">Business</li>
+                    <li class="li-footer-left"> <href="google.com">How Search Works</li>
+                    <li class="li-footer-right"> <href="images.google.com">Privacy</li>
+                    <li class="li-footer-right"> <href="images.google.com">Terms</li>
+                    <li class="li-footer-right"> <href="images.google.com">Settings</li>
 
+            </footer>  
     </body>
 </html>
 
