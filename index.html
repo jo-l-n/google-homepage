@@ -24,16 +24,14 @@
                 align-items: center;
                 list-style:none;
                 text-decoration:none;
+                
             
                 
             }
              .li-right {
               padding:4px;
               margin-right:20px;
-              float:right;
-              display:flex;
-            
-            
+              float:right;            
                  }
 
     
@@ -41,7 +39,7 @@
               padding:4px;
               margin-left:20px;
               float:left;
-        
+
 
             }
 
@@ -49,6 +47,8 @@
                 float:right;
                 padding-right:25px;
                 margin-top:-5px;
+                overflow: hidden;
+
             }
 
             .button {
@@ -66,10 +66,9 @@
 
             .body {
                 text-align: center;
-                display:flexbox;
                 color: #5F6368;
                 padding-top:200px;
-            
+              
                 
             }
 
@@ -86,39 +85,36 @@
                 border-color: gainsboro;
                 border-style:solid
             }
-            /*a {
-                text-decoration: none;
-                color: black;
-            }
-            */
+         
             #footer-wrapper {
                 font-family:roboto, Helvetica, sans-serif;
                font-size: 13px;
                list-style: none;
-               text-align:center;
-               color:gray;
-            
+                color:gray;
 
 
             }
             #footer-nav {
                 width:100%;
                 height:40px;
-                position:absolute;
                 bottom:0;
-                padding: 4px;
-                margin:0;
+                padding: 0%;
+                margin:auto;
                 align-items: center;
                 list-style:none;
                 background-color: #f2f2f2;
+                position:fixed;
+                overflow: hidden;
+                line-height:3em
             
                 
             }
              .li-footer-right {
               padding:4px;
-              margin-right:20px;
               float:right;
+              margin-right:20px;
               
+
             
             
                  }
@@ -126,8 +122,10 @@
     
             .li-footer-left {
               padding:4px;
-              margin-left:20px;
               float:left;
+              margin-left:20px;
+             
+
             
 
             }
@@ -167,12 +165,14 @@
          <footer>
             <div id="footer-wrapper">
                 <ul id="footer-nav">
-                    <li class="li-footer-left"> <href="google.com">Advertising</li>
-                    <li class="li-footer-left"> <href="images.google.com">Business</li>
-                    <li class="li-footer-left"> <href="google.com">How Search Works</li>
-                    <li class="li-footer-right"> <href="images.google.com">Privacy</li>
-                    <li class="li-footer-right"> <href="images.google.com">Terms</li>
-                    <li class="li-footer-right"> <href="images.google.com">Settings</li>
+                    <li class="li-footer-left"> <href="ads.google.com">Advertising</li>
+                    <li class="li-footer-left"> <href="smallbusiness.withgoogle.com">Business</li>
+                    <li class="li-footer-left"> <href="google.com/search/howsearchworks">How Search Works</li>
+                    <li class="li-footer-right"> <href="policies.google.com">Privacy</li>
+                    <li class="li-footer-right"> <href="policies.google.com/terms">Terms</li>
+                    <li class="li-footer-right"> <href="google.com/preferences">Settings</li>
+                </ul>
+                </div>
 
             </footer>  
     </body>
